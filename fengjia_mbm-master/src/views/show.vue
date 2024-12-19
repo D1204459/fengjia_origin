@@ -63,22 +63,22 @@ const forShow = ref(showContent)
         </div>
       </div>
     </div>
-
-    <pagefooter/>
   </div>
+  <pagefooter/>
 </template>
 
 <style scoped>
 .show_container {
-  background: linear-gradient(135deg, rgba(0, 119, 182, 0.95) 0%, rgba(58, 59, 189, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(0, 119, 182, 0.95) 0%, rgba(103, 103, 241, 0.9) 100%);
   border-radius: 20px;
   min-height: 100vh;
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
   padding: 2rem;
+  margin: 2rem;
 }
 
 .show_title {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   position: relative;
 }
 
@@ -152,7 +152,7 @@ const forShow = ref(showContent)
 }
 
 .show-title {
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #b3e0ff;

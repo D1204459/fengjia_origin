@@ -43,15 +43,15 @@ const carousel = carousel_img;
 .carousel {
   margin-top: 80px;
   width: 100%;
-  height: 600px;
+  height: 450px; /* 調整為與 carousel-item 一致的高度 */
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-item {
-  height: 600px;
+  height: 450px;
   position: relative;
+  overflow: hidden; /* 防止圖片溢出 */
 }
 
 .image-overlay {
@@ -68,6 +68,7 @@ const carousel = carousel_img;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center; /* 確保圖片居中顯示 */
   transform: scale(1.1);
   transition: transform 0.5s ease;
 }

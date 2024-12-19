@@ -53,10 +53,10 @@ const questions_bio = ref(Qa_bio);
         <div class="Aquarium_question">
           <div v-for="item in questions_venue" :key="item.id" class="question_content  w-100 p-2">
             <div class="question mt-2">
-              <h2>Q : {{ item.question }}</h2>
+              <h2>{{ item.question }}</h2>
             </div>
             <div class="answer">
-              <p class="text-start">A : {{ item.answer }}</p>
+              <p class="text-start">{{ item.answer }}</p>
             </div>
           </div>
         </div>
@@ -65,10 +65,10 @@ const questions_bio = ref(Qa_bio);
         <div class="bio_question">
           <div v-for="item in questions_bio" :key="item.id" class="question_content  w-100 p-2">
             <div class="question mt-2">
-              <h2>Q : {{ item.question }}</h2>
+              <h2>{{ item.question }}</h2>
             </div>
             <div class="answer">
-              <p class="text-start">A : {{ item.answer }}</p>
+              <p class="text-start">{{ item.answer }}</p>
             </div>
           </div>
         </div>
