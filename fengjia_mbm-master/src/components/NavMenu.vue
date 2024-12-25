@@ -61,7 +61,7 @@ const scrollToSection = async (section) => {
       <div class="container-fluid">
         <ul class="navbar-nav">
           <!-- 場館導覽下拉選單 -->
-          <div class="menu-group">
+          <li class="menu-group">
             <button
                 class="menu-button"
                 :class="{ active: activeDropdown === 'tour' }"
@@ -82,10 +82,10 @@ const scrollToSection = async (section) => {
                 </a>
               </li>
             </ul>
-          </div>
+          </li>
 
           <!-- 售票與服務下拉選單 -->
-          <div class="menu-group">
+          <li class="menu-group">
             <button
                 class="menu-button"
                 :class="{ active: activeDropdown === 'service' }"
@@ -106,7 +106,7 @@ const scrollToSection = async (section) => {
                 </a>
               </li>
             </ul>
-          </div>
+          </li>
 
           <!-- 一般導航項目 -->
           <li
@@ -127,6 +127,7 @@ const scrollToSection = async (section) => {
     </nav>
   </div>
 </template>
+
 
 <style scoped>
 .menu {

@@ -17,7 +17,7 @@ const media = mediaContent;
           <div class="video-wrapper">
             <iframe
                 :src="item.video"
-                frameborder="0"
+                style="border: none;"
                 allowfullscreen
                 loading="lazy">
             </iframe>
@@ -30,7 +30,7 @@ const media = mediaContent;
                data-bs-ride="carousel" data-bs-interval="3000">
             <!-- 指示器 -->
             <div class="carousel-indicators">
-              <button v-for="(_, index) in item.poster"
+              <button v-for="(index) in item.poster"
                       :key="index"
                       type="button"
                       :class="['indicator-btn', { active: index === 0 }]"
@@ -169,7 +169,7 @@ const media = mediaContent;
   transition: all 0.3s ease;
 }
 
-.indicator-btn.active {
+.indicator-btn {
   background: #fff;
   transform: scale(1.2);
 }
