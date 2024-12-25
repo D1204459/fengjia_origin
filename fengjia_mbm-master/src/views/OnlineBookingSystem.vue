@@ -328,7 +328,6 @@
   try {
     const orderInfo = JSON.parse(localStorage.getItem('currentOrder'));
 
-  if (!orderInfo) throw new Error('找不到訂單資訊');
     if (!orderInfo) {console.error('找不到訂單資訊');return;} // 使用 return 提前結束
 
 
