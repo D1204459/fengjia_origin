@@ -59,7 +59,7 @@ const media = mediaContent;
 <style scoped>
 .media-section {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #003a61 0%, #001a2f 100%);
+  background: #006994FF;
   min-height: 100vh;
 }
 
@@ -153,7 +153,6 @@ const media = mediaContent;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
 }
 
 .carousel-indicators {

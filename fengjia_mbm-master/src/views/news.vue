@@ -109,6 +109,7 @@ window.scrollTo(0,0);//來到此頁面時，將滾動條移動到最上方
   padding: 2rem;
   position: relative;
   overflow: hidden;
+  margin: 2rem;
 }
 /* 添加裝飾性波浪背景 */
 .news_container::before {
@@ -168,7 +169,7 @@ window.scrollTo(0,0);//來到此頁面時，將滾動條移動到最上方
 }
 
 .nav-link.active {
-  background: #77b2ef !important; /* 與選單相同的藍色 */
+  background: #1a3778 !important; /* 與選單相同的藍色 */
   color: #ffffff !important;
 }
 
@@ -186,35 +187,39 @@ window.scrollTo(0,0);//來到此頁面時，將滾動條移動到最上方
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
+  text-align: center;
 }
 
 tbody tr {
   position: relative;
   transition: all 0.3s ease;
-  }
+}
 
 tbody tr:hover {
   transform: translateX(5px);
   background: rgba(119, 178, 239, 0.15);
 }
 
-  td {
-    padding: 1rem !important;
-    color: #333333;
-    border: none !important;
-  }
+td {
+  padding: 1rem !important;
+  color: #333333;
+  border: none !important;
+  text-align: center;
+}
 
-  tbody td a {
-    display: block;
-    padding: 0.5rem;
-    position: relative;
-    overflow: hidden;
-  }
+tbody td a {
+  display: block;
+  padding: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
 
-  tbody td a:hover {
-    color: #0088cc;
-    border-bottom: 2px solid #0088cc;
-  }
+tbody td a:hover {
+  color: #0088cc;
+  border-bottom: 2px solid #0088cc;
+  cursor: pointer;
+  font-weight: 700;
+}
 /* 添加連結懸停效果 */
 tbody td a::after {
   content: '';

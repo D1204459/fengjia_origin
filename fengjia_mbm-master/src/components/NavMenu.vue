@@ -254,6 +254,8 @@ const scrollToSection = async (section) => {
   gap: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none; /* 移除底線 */
+
 }
 
 .submenu-item:hover {

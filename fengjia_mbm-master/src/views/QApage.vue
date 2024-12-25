@@ -125,11 +125,23 @@ const questions_bio = ref(Qa_bio);
   background: rgba(227, 21, 100, 0.9);
 }
 
-.button-group input[type="radio"]:checked + label {
-  background-color: #132d83;
-  color: #ffffff;
-  border: 1px solid #2b426d;
+.button-group input[type="radio"] {
+  display: none;
+}
+.button-group label {
+  background: rgba(119, 178, 239, 0.7);
+  color: #333;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
 /* 問答卡片樣式 */
