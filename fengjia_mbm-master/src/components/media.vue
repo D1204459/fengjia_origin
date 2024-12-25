@@ -26,16 +26,17 @@ const media = mediaContent;
 
         <!-- 海報輪播 -->
         <div class="poster-carousel">
-          <div id="posterCarousel" class="carousel slide carousel-fade"
+          <div :id="'posterCarousel' + item.id" class="carousel slide carousel-fade"
                data-bs-ride="carousel" data-bs-interval="3000">
             <!-- 指示器 -->
             <div class="carousel-indicators">
-              <button v-for="(index) in item.poster"
+              <button v-for="(poster, index) in item.poster"
                       :key="index"
                       type="button"
                       :class="['indicator-btn', { active: index === 0 }]"
-                      data-bs-target="#posterCarousel"
+                      :data-bs-target="'#posterCarousel' + item.id"
                       :data-bs-slide-to="index"
+                      :aria-current="index === 0"
                       :aria-label="`Slide ${index + 1}`">
               </button>
             </div>

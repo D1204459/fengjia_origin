@@ -1,6 +1,6 @@
 import img1 from '@/assets/photo/poster1.png'
 import img2 from '@/assets/photo/poster2.png'
-import img3 from '@/assets/photo/img1.png'
+import img3 from '@/assets/photo/poster3.png'
 
 
 
