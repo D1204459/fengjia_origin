@@ -393,7 +393,8 @@
   console.log('response:', response.data);
 
 } else {
-  throw new Error('未收到有效的付款 URL');
+  //throw new Error('未收到有效的付款 URL');
+  console.error('未收到有效的付款 URL');
 }
 } catch (error) {
   console.error('付款錯誤:', error.response?.data || error.message);
