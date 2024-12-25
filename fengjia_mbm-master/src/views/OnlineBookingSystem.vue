@@ -117,7 +117,6 @@
               </div>
             </div>
           </div>
-
           <div class="summary-section ticket-info">
             <h4>票券明細</h4>
             <div class="ticket-details">
@@ -134,6 +133,7 @@
                 <span class="ticket-count">{{ formData.elderlyTicket }} 張</span>
               </div>
             </div>
+
             <div class="total-amount">
               <div class="amount-title">總金額</div>
               <div class="amount-value">
@@ -179,7 +179,6 @@
 <script setup>
   import {ref, reactive, computed, onMounted, onBeforeUnmount} from 'vue';
   import axios from 'axios';
-  import test from '@/assets/test.json';
   import { ticketInfo } from "@/data/ticketInfo.js";
   import router from "@/router/index.js";
   const ticketData = ref(ticketInfo);
@@ -539,10 +538,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.required {
-  color: #dc3545;
-  margin-left: 4px;
-}
+
 
 /* 錯誤輸入框樣式 */
 .error-message {
@@ -553,13 +549,9 @@
 }
 
 /* 錯誤輸入框樣式 */
-.error-input {
-  border-color: #dc3545 !important;
-}
 
-.error-input:focus {
-  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25) !important;
-}
+
+
 
 /* 表單群組美化 */
 .form-group {
@@ -1060,10 +1052,6 @@ body {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 /* 警告狀態樣式 */
-.countdown-warning .countdown-circle-progress {
-  stroke: #dc3545;
-}
-
 .countdown-warning .countdown-text {
   color: #dc3545;
   animation: blink 1s infinite;
