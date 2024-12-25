@@ -328,13 +328,8 @@
   try {
     const orderInfo = JSON.parse(localStorage.getItem('currentOrder'));
 
-    //if (!orderInfo) {console.error('找不到訂單資訊');return;} // 使用 return 提前結束
-    try {
-      // 處理邏輯
-    } catch (error) {
-      console.error('處理錯誤:', error);
-      throw error; // 再次向上丟出例外
-    }
+    if (!orderInfo) {console.error('找不到訂單資訊');return;} // 使用 return 提前結束
+
 
 
   const response = await axios.get('http://localhost:3000/confirm', {
@@ -352,7 +347,8 @@
   //await sendToMongo();//
   localStorage.removeItem('currentOrder');
 } else {
-  throw new Error('付款失敗');
+  //throw new Error('付款失敗');
+    console.error('付款失敗');
 }
 } catch (error) {
   console.error('處理付款回調時出錯:', error);
