@@ -1,6 +1,4 @@
 <template>
-
-
   <div class="container">
     <div class="header">線上訂票系統</div>
     <form @submit.prevent="submitOrder">
@@ -182,19 +180,11 @@
   import { ticketInfo } from "@/data/ticketInfo.js";
   import router from "@/router/index.js";
   const ticketData = ref(ticketInfo);
-
-
-
-
   // 定義 props
   const props = defineProps({
   transactionId: String,
   orderId: String
 });
-
-
-
-
   // 定義 reactive 和 ref
   const formData = ref( {
   ticketId:'',
@@ -339,6 +329,7 @@
     const orderInfo = JSON.parse(localStorage.getItem('currentOrder'));
 
   if (!orderInfo) throw new Error('找不到訂單資訊');
+    if (!orderInfo) {console.error('找不到訂單資訊');return;} // 使用 return 提前結束
 
 
   const response = await axios.get('http://localhost:3000/confirm', {
