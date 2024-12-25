@@ -124,11 +124,11 @@
               </div>
               <div class="ticket-item">
                 <span>敬老票</span>
-                <span class="ticket-count">{{ formData.childTicket }} 張</span>
+                <span class="ticket-count">{{ formData.elderlyTicket }} 張</span>
               </div>
               <div class="ticket-item">
                 <span>兒童票</span>
-                <span class="ticket-count">{{ formData.elderlyTicket }} 張</span>
+                <span class="ticket-count">{{ formData.childTicket }} 張</span>formData.childTicket
               </div>
             </div>
 
