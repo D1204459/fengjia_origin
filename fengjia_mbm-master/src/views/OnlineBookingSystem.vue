@@ -60,7 +60,7 @@
         <div class="ticket-type">
           <span>兒童</span>
           <button type="button" @click="adjustCount('child', 1)">+</button>
-          <span class="ticket-count">{{ formData.childTicket }}</span>
+          <span class="ticket-count">{{formData.childTicket }}</span>
           <button type="button" @click="adjustCount('child', -1)">-</button>
         </div>
         <span class="error-message" v-if="errors.tickets">{{ errors.tickets }}</span>
